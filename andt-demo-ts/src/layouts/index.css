@@ -1,0 +1,15 @@
+.normal {
+  font-family: Georgia, sans-serif;
+  text-align: center;
+  flex: 1;
+  height: 100%;
+}
+
+.title {
+  height: 3rem;
+  font-weight: normal;
+  letter-spacing: -1px;
+  background: darkslateblue;
+  color: white;
+  margin: 0;
+}

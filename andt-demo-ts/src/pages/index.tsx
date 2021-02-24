@@ -1,0 +1,123 @@
+import React, { FC } from 'react';
+import 'antd/dist/antd.css';
+import styles from './index.css';
+
+import { Layout, Menu, Button } from 'antd';
+import {
+  AppstoreOutlined,
+  BarChartOutlined,
+  CloudOutlined,
+  ShopOutlined,
+  TeamOutlined,
+  UserOutlined,
+  UploadOutlined,
+  VideoCameraOutlined,
+} from '@ant-design/icons';
+
+const { Header, Content, Footer, Sider } = Layout;
+
+export default function () {
+  return (
+    <div className={styles.normal}>
+      <Layout className={styles.side_layout}>
+        <Sider
+          style={{
+            overflow: 'auto',
+            height: '100vh',
+            position: 'fixed',
+            left: 0,
+          }}
+        >
+          <div className="logo" />
+          <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
+            <Menu.Item key="1" icon={<UserOutlined />}>
+              nav 1
+              <Button type="primary">Primary Button</Button>
+            </Menu.Item>
+            <Menu.Item key="2" icon={<VideoCameraOutlined />}>
+              nav 2
+        </Menu.Item>
+            <Menu.Item key="3" icon={<UploadOutlined />}>
+              nav 3
+        </Menu.Item>
+            <Menu.Item key="4" icon={<BarChartOutlined />}>
+              nav 4
+        </Menu.Item>
+            <Menu.Item key="5" icon={<CloudOutlined />}>
+              nav 5
+        </Menu.Item>
+            <Menu.Item key="6" icon={<AppstoreOutlined />}>
+              nav 6
+        </Menu.Item>
+            <Menu.Item key="7" icon={<TeamOutlined />}>
+              nav 7
+        </Menu.Item>
+            <Menu.Item key="8" icon={<ShopOutlined />}>
+              nav 8
+        </Menu.Item>
+          </Menu>
+        </Sider>
+        <Layout className="side-layout" style={{ marginLeft: 200 }}>
+          <Content className={styles.right_view}>
+            <div className={styles.viewcontent}>
+              asdasd
+              ...
+          <br />
+              <p className="aaa">
+                Really
+          </p>
+              <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          long
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ...
+          <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ... <br />
+          ...
+          ... <br />
+          ... <br />   ... <br />
+          ... <br />   ... <br />
+          ... <br />
+
+            </div>
+          </Content>
+          <Footer className={styles.footer}>Ant Design ©2018 Created by Ant UED</Footer>
+        </Layout>
+      </Layout>
+    </div>
+  );
+}
